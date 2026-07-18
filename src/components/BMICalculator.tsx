@@ -223,7 +223,7 @@ export default function BMICalculator() {
             {/* Output results gauge / right column */}
             <div className="md:col-span-6 p-6 sm:p-10 bg-zinc-900/10 flex flex-col justify-center min-h-[350px]">
               <AnimatePresence mode="wait">
-                {bmiResult === null ? (
+                {bmiResult === null && (
                   <motion.div
                     key="empty"
                     initial={{ opacity: 0 }}
@@ -243,7 +243,8 @@ export default function BMICalculator() {
                       </p>
                     </div>
                   </motion.div>
-                ) : (
+                )}
+                {bmiResult !== null && (
                   <motion.div
                     key="results"
                     initial={{ opacity: 0, scale: 0.95 }}

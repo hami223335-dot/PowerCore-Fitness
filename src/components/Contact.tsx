@@ -55,7 +55,7 @@ export default function Contact() {
           {/* Left Column: Premium Contact Form */}
           <div className="lg:col-span-7 rounded-3xl bg-zinc-950 border border-zinc-900 p-6 sm:p-10 shadow-2xl relative overflow-hidden min-h-[500px]">
             <AnimatePresence mode="wait">
-              {!isSubmitted ? (
+              {!isSubmitted && (
                 <motion.div
                   key="form"
                   initial={{ opacity: 0, y: 10 }}
@@ -144,7 +144,8 @@ export default function Contact() {
                     </button>
                   </form>
                 </motion.div>
-              ) : (
+              )}
+              {isSubmitted && (
                 <motion.div
                   key="ticket"
                   initial={{ opacity: 0, scale: 0.95 }}
