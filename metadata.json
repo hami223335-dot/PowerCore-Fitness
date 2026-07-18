@@ -1,0 +1,6 @@
+{
+  "name": "PowerCore Fitness",
+  "description": "Premium, world-class, production-ready fitness website with advanced UI, smooth animations, dynamic BMI calculator, facility showcases, and custom dark mode layout.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
